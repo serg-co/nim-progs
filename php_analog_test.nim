@@ -13,3 +13,18 @@ echo a
 var n = 22
 echo "Строка" & $n # символ $ преобразует числа в строки
 
+#[ Проверки ]#
+
+echo "value 1:"
+var val1 = readLine( stdin )
+echo "value 2:"
+var val2 = read_line( stdin )
+if val1 == val2:
+    echo "result: ", val1, "^2"
+elif val1 > val2:
+    echo val1, " > ", val2
+else:
+    echo val1, " < ", val2
+
+#[ Создание ассоциативных массивов. ]#
+
