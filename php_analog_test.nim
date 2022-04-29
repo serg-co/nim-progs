@@ -59,7 +59,7 @@ else:
 
 
 #[ Циклы ]#
-
+#[
 echo "  countup"
 for i in countup( 1, 10 ):
     echo i
@@ -74,10 +74,18 @@ for i in 1 ..< 10:
 
 echo "  string"
 var s = "sфs"
-for i in 0 .. s.len:
+for i in 0 ..< s.len:
     echo s[i]
 # s??s
 # т.е. символы это байты
+]#
+
+
 
 #[ Создание ассоциативных массивов. ]#
 
+import tables
+var t = init_table[ string, string ]()
+t["key"] = "value"
+
+echo t
