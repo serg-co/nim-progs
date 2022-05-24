@@ -83,9 +83,20 @@ for i in 0 ..< s.len:
 
 
 #[ Создание ассоциативных массивов. ]#
-
+#[
 import tables
 var t = init_table[ string, string ]()
 t["key"] = "value"
 
 echo t
+]#
+
+let x = 2
+for i in 1 .. 2:
+    if i < 2:
+        #let x = 1
+        echo x
+    else:
+        #let x = 2
+        echo x
+echo x
