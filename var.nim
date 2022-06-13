@@ -1,21 +1,18 @@
-var day = "02"
-var month = 12
-var year = "2022"
+var day = "02"; var month = 06; var year = "2022"
 
-var months: seq[string]
-months.add "Ошибка"
-months.add "Январь"
-months.add "Февраль"
-months.add "Март"
-months.add "Апрель"
-months.add "Май"
-months.add "Июнь"
-months.add "Июль"
-months.add "Август"
-months.add "Сентябрь"
-months.add "Октябрь"
-months.add "Ноябрь"
-months.add "Декабрь"
-months[12] = "Декабрь2"
+var months: array[1..12, string] = [
+"Январь",
+"Февраль",
+"Март",
+"Апрель",
+"Май",
+"Июнь",
+"Июль",
+"Август",
+"Сентябрь",
+"Октябрь",
+"Ноябрь",
+"Декабрь"
+]
 
 echo day, " ", months[month], " ", year
